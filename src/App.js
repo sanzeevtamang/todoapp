@@ -10,9 +10,14 @@ export default class App extends Component {
   }
 
   deleteTodo = (id) => {
-    console.log(id);
+    const todos = this.state.todos.filter(todo=>{
+      return todo.id !== id
+    });
+    this.setState({
+      todos
+    })
   }
-
+ 
   render() {
     return (
       <div className="todo-app container">
