@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {bindActionCreator} from 'redux';
+import {bindActionCreators} from 'redux';
 import {deleteTask} from '../../actions/';
 import {connect} from 'react-redux';
 
-export default class index extends Component {
+class Task extends Component {
     render() {
         return (
             <tr>
@@ -19,7 +19,7 @@ export default class index extends Component {
 }
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreator({deleteTask}, dispatch);
+    return bindActionCreators({deleteTask}, dispatch);
 }
 
 export default connect(()=>{},mapDispatchToProps)(Task);
