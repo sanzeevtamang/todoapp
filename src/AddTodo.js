@@ -24,7 +24,7 @@ export default class AddTodo extends Component {
             <div>
                <form onSubmit={this.handleSubmit}>
                    <label> Add new todo:</label>
-                   <input type="text" onChange={this.handleChange} value={this.state.content}/>
+                   <input type="text" ref = "task" onChange={this.handleChange} value={this.state.content}/>
                 
                </form> 
             </div>
