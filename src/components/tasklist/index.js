@@ -5,7 +5,7 @@ import Task from '../task/'
 class TaskList extends Component {
     render() {
         return (
-            <table>
+            <table class="highlight">
                 <thead>
                     <tr>
                         <th>Tasks</th>

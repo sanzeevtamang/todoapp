@@ -7,9 +7,9 @@ class TaskBar extends Component {
     render() {
         return (
             <div>
-                <input type="text" ref="task" placeholder = "add your Tasks Here"/>
-                <button onClick={()=> this.props.addTask(this.refs.task.value)}>Add Task</button>
-                
+                <input  type="text" ref="task" placeholder = "add your Tasks Here" />
+                <button class="btn waves-effect waves-light" onClick={()=> this.props.addTask(this.refs.task.value)}>Add Task
+                </button>
             </div>
         );
     }

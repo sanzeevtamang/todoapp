@@ -6,7 +6,7 @@ import TaskList from "./components/tasklist/";
 export default class App extends Component {
     render() {
         return (
-            <div>
+            <div class="container">
                 <Header />
                 <TaskBar />
                 <TaskList />

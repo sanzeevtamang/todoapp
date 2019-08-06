@@ -11,7 +11,7 @@ class Task extends Component {
                     {this.props.task}
                 </td>
                 <td>
-                    <button onClick={()=>{this.props.deleteTask(this.props.id)}}>Delete</button>
+                    <button class="btn waves-effect waves-light" onClick={()=>{this.props.deleteTask(this.props.id)}}>Delete</button>
                 </td>
             </tr>
         )
